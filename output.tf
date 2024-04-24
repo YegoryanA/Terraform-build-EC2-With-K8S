@@ -7,3 +7,11 @@ output "ecr_repository_uri" {
   description = "ECR repo URI"
   value       = aws_ecr_repository.uiservice.repository_url
 }
+
+output "access_key" {
+ value = var.access_key
+}
+
+output "secret_key" {
+ value = var.secret_key
+}
