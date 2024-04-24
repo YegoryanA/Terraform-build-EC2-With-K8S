@@ -5,6 +5,10 @@
 hostname k8s-master
 echo "k8s-master" > /etc/hostname
 
+export AWS_ACCESS_KEY_ID=${$AWS_ACCESS_KEY_ID}
+export AWS_SECRET_ACCESS_KEY=${$AWS_SECRET_ACCESS_KEY}
+export AWS_DEFAULT_REGION=${region}
+
 apt update
 apt install apt-transport-https ca-certificates curl software-properties-common bash-completion -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
