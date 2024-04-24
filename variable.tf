@@ -1,3 +1,13 @@
+variable "access_key" {
+  description = "Access key to AWS console"
+  default     = ""
+}
+
+variable "secret_key" {
+  description = "Secret key to AWS console"
+  default     = ""
+}
+
 variable "ami_key_pair_name" {
   description = "SSH Key"
   default     = "NVirginia_Key_Pair"
