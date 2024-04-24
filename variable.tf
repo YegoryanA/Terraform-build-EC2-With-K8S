@@ -12,6 +12,7 @@ variable "ami_key_pair_name" {
   description = "SSH Key"
   default     = "NVirginia_Key_Pair"
 }
+
 variable "number_of_worker" {
   description = "number of worker instances to be join on cluster."
   default     = 1
