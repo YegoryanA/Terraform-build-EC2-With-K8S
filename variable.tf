@@ -1,11 +1,11 @@
 variable "access_key" {
   description = "Access key to AWS console"
-  default     = "$AWS_ACCESS_KEY_ID"
+  default     = ""
 }
 
 variable "secret_key" {
   description = "Secret key to AWS console"
-  default     = "$AWS_SECRET_ACCESS_KEY"
+  default     = ""
 }
 
 variable "ami_key_pair_name" {
